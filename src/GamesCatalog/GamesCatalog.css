@@ -1,0 +1,108 @@
+.GamesCatalog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  gap: 15px;
+}
+
+.mainGame,
+.sideGames {
+  overflow: hidden;
+  height: 400px;
+  cursor: pointer;
+}
+
+.mainGame {
+  position: relative;
+  width: 72%;
+  border-radius: 30px;
+}
+
+.sideGames {
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.sideGames .game {
+  width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.mainGame img,
+.sideGames .game img {
+  width: 100%;
+  height: 100%;
+}
+
+.mainGame .data,
+.sideGames .game .data {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 0 30px;
+  transition: 0.3s;
+}
+
+.mainGame .data h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.mainGame .data h3 {
+  margin: 10px 0;
+  font-size: 1.4rem;
+}
+
+.mainGame .data h3 a {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.mainGame .data button {
+  outline: 0;
+  border: 0;
+  border-radius: 30px;
+  padding: 10px;
+  background: linear-gradient(135deg, #fc0014, #ee0079);
+  width: 140px;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.mainGame .data button:hover {
+  filter: hue-rotate(180deg);
+}
+
+.mainGame:hover .data {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px 0 0 50px;
+}
+
+.sideGames .game .data {
+  align-items: center;
+}
+
+.sideGames .game .data h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.sideGames .game .data:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}

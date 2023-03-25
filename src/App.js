@@ -1,4 +1,5 @@
 import "./App.css";
+import GamesCatalog from "./GamesCatalog/GamesCatalog";
 import HorizontalNavbar from "./HorizontalNavbar/HorizontalNavbar";
 import VerticalNavbar from "./VerticalNavbar/VerticaNavbar";
 
@@ -9,6 +10,7 @@ function App() {
       <section>
         <main>
           <HorizontalNavbar />
+          <GamesCatalog />
         </main>
       </section>
     </div>
