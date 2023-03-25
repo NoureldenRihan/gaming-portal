@@ -1,0 +1,30 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section {
+  width: 95%;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+main {
+  width: 100%;
+  background-color: #131925;
+  border-radius: 30px;
+  padding: 25px 35px;
+}
+
+.Icon {
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.Icon:hover {
+  transform: translateY(-2px);
+}
