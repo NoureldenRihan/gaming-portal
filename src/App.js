@@ -1,4 +1,5 @@
 import "./App.css";
+import Games from "./Games/Games";
 import GamesCatalog from "./GamesCatalog/GamesCatalog";
 import HorizontalNavbar from "./HorizontalNavbar/HorizontalNavbar";
 import Logos from "./Logos/Logos";
@@ -13,6 +14,7 @@ function App() {
           <HorizontalNavbar />
           <GamesCatalog />
           <Logos />
+          <Games />
         </main>
       </section>
     </div>
