@@ -70,6 +70,11 @@
 .mainGame .data h3 a {
   font-size: 2rem;
   text-decoration: underline;
+  transition: 0.3s;
+}
+
+.mainGame .data h3 a:hover {
+  color: rgba(32, 140, 255, 0.7);
 }
 
 .mainGame .data button {
