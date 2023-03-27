@@ -5,6 +5,25 @@
   position: relative;
   cursor: pointer;
   transition: 0.3s;
+  height: 450px;
+  -webkit-box-reflect: below 0
+    linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.7));
+}
+
+.l2 {
+  transform: skewY(-20deg);
+}
+
+.l1 {
+  transform: skewY(-10deg);
+}
+
+.r1 {
+  transform: skewY(10deg);
+}
+
+.r2 {
+  transform: skewY(20deg);
 }
 
 .game img {
@@ -18,15 +37,29 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 0 25px 0;
+}
+
+.overlay h3 a {
+  font-size: 1.4rem;
   transition: 0.3s;
 }
 
+.overlay h3 a:hover {
+  color: rgba(32, 140, 255, 0.7);
+}
+
 .game:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   z-index: 100;
 }
 
 .game:hover .overlay {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0);
 }

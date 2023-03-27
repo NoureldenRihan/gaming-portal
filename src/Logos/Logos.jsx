@@ -8,7 +8,7 @@ function Logos() {
         componentClass="logo"
         imgSrc="/Images/Logo 1.png"
         imgAlt="Logo"
-        link=""
+        link="#"
       />
       <Logo
         componentClass="logo devlogo"
@@ -20,7 +20,7 @@ function Logos() {
         componentClass="logo"
         imgSrc="/Images/Logo 2.png"
         imgAlt="Logo"
-        link=""
+        link="#"
       />
       <Logo
         componentClass="logo devlogo"
@@ -32,7 +32,7 @@ function Logos() {
         componentClass="logo"
         imgSrc="/Images/Logo 3.png"
         imgAlt="Logo"
-        link=""
+        link="#"
       />
     </div>
   );

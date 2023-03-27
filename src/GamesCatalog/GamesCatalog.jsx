@@ -21,13 +21,13 @@ function GamesCatalog() {
         </div>
       </div>
       <div className="sideGames">
-        <div className="game">
+        <div className="sidegame">
           <img src="/Images/Battlefield.jpg" alt="Game 2" />
           <div className="data">
             <h2>Battlefield</h2>
           </div>
         </div>
-        <div className="game">
+        <div className="sidegame">
           <img src="/Images/Call of duty.jpg" alt="Game 3" />
           <div className="data">
             <h2>Fortnite</h2>
