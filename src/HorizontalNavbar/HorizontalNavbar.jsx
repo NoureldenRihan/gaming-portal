@@ -21,7 +21,7 @@ function HorizontalNavbar() {
   return (
     <div className="horizontalnavbar">
       <div className="search">
-        <i class="Icon bi bi-search" onClick={search}></i>
+        <i className="Icon bi bi-search" onClick={search}></i>
         <input
           id="searchBar"
           type="text"
@@ -29,9 +29,9 @@ function HorizontalNavbar() {
         />
       </div>
       <div className="navigation">
-        <i class="navIcons notify Icon bi bi-bell" onClick={fillIcon}></i>
-        <i class="navIcons Icon bi bi-heart" onClick={fillIcon}></i>
-        <i class="navIcons Icon bi bi-bag" onClick={fillIcon}></i>
+        <i className="navIcons notify Icon bi bi-bell" onClick={fillIcon}></i>
+        <i className="navIcons Icon bi bi-heart" onClick={fillIcon}></i>
+        <i className="navIcons Icon bi bi-bag" onClick={fillIcon}></i>
         <div className="profileImgHolder">
           <div className="profileImg">
             <img src="/Images/Nourelden Rihan Profile Pic.jpg" alt="User" />

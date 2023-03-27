@@ -23,20 +23,23 @@ function VerticalNavbar() {
         <img src="/Images/Nourelden Rihan Profile Pic.jpg" alt="User" />
       </div>
       <div className="tabs">
-        <i class="Icon bi bi-house navTab tabIcon tab" onClick={choose}></i>
-        <i class="Icon bi bi-flower1 navTab tabIcon tab" onClick={choose}></i>
+        <i className="Icon bi bi-house navTab tabIcon tab" onClick={choose}></i>
         <i
-          class="Icon bi bi-shop-window navTab tabIcon tab"
+          className="Icon bi bi-flower1 navTab tabIcon tab"
           onClick={choose}
         ></i>
         <i
-          class="Icon bi bi-controller navTab tabIcon tab"
+          className="Icon bi bi-shop-window navTab tabIcon tab"
+          onClick={choose}
+        ></i>
+        <i
+          className="Icon bi bi-controller navTab tabIcon tab"
           onClick={choose}
         ></i>
       </div>
       <div className="advanced">
-        <i class="Icon bi bi-upload"></i>
-        <i class="Icon bi bi-gear"></i>
+        <i className="Icon bi bi-upload"></i>
+        <i className="Icon bi bi-gear"></i>
       </div>
     </div>
   );
