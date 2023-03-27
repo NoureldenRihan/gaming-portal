@@ -15,7 +15,7 @@ function GamesCatalog() {
           </h3>
           <h3>
             Developed by{" "}
-            <a href="https://nourelden-rihan.pages.dev">Nourelden Rihan</a>
+            <a href="https://nourelden-rihan.web.app">Nourelden Rihan</a>
           </h3>
           <button>Play Now</button>
         </div>
