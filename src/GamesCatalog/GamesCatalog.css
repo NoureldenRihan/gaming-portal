@@ -128,3 +128,44 @@
     gap: 15px;
   }
 }
+
+@media (max-width: 650px) {
+  .GamesCatalog {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 10px;
+  }
+
+  .mainGame,
+  .sideGames {
+    height: 400px;
+  }
+
+  .mainGame {
+    width: 100%;
+  }
+
+  .sideGames {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .mainGame .data,
+  .sideGames .sidegame .data {
+    text-align: center;
+    padding: 0 0 0 20px;
+  }
+
+  .mainGame .data h1 {
+    font-size: 3rem;
+  }
+
+  .mainGame .data button {
+    margin: 10px auto 0 auto;
+  }
+
+  .mainGame:hover .data {
+    padding: 0 0 0 20px;
+  }
+}

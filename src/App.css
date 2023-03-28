@@ -28,3 +28,26 @@ main {
 .Icon:hover {
   transform: translateY(-2px);
 }
+
+@media (max-width: 650px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section {
+    width: 100%;
+    margin-top: 10px;
+    padding: 0 3px;
+  }
+
+  main {
+    padding: 15px 25px;
+  }
+
+  .Icon {
+    font-size: 1.4rem;
+  }
+}

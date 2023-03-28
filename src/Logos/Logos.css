@@ -6,3 +6,11 @@
   margin-top: 75px;
   gap: 15px;
 }
+
+@media (max-width: 650px) {
+  .logos {
+    flex-flow: row wrap;
+    margin-top: 50px;
+    gap: 10px;
+  }
+}

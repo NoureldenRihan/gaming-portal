@@ -134,3 +134,47 @@
     font-size: 2rem;
   }
 }
+
+@media (max-width: 650px) {
+  .VerticalNavbar {
+    align-self: flex-start;
+    padding: 10px 0 10px 0;
+    background-color: #1c2029;
+    border-right: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .profileIcon {
+    display: none;
+  }
+
+  .tabs {
+    width: 75%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .tabs .Icon {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+    z-index: 5;
+  }
+
+  .advanced {
+    width: 25%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px 20px;
+  }
+
+  .advanced .Icon {
+    font-size: 1.8rem;
+  }
+
+  .advanced .Icon:first-child {
+    margin-bottom: 0;
+  }
+}

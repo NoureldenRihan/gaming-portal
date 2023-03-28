@@ -69,3 +69,28 @@
   top: 5px;
   right: 2px;
 }
+
+@media (max-width: 650px) {
+  .search {
+    width: 60%;
+    padding: 10px;
+  }
+
+  .search .Icon {
+    font-size: 1.3rem;
+    padding: 0 10px 0 0;
+  }
+
+  .navigation .Icon {
+    margin: 0 15px 0 0;
+  }
+
+  .navigation .profileImg {
+    width: 35px;
+  }
+
+  .notify,
+  .profileImgHolder {
+    position: relative;
+  }
+}

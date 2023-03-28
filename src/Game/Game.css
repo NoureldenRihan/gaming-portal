@@ -73,3 +73,24 @@
     font-size: 1.1rem;
   }
 }
+
+@media (max-width: 650px) {
+  .game {
+    width: 20%;
+    height: 250px;
+    -webkit-box-reflect: below 2px
+      linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.7));
+  }
+
+  .overlay {
+    padding: 0 5px 35px 0;
+  }
+
+  .overlay h3 a {
+    font-size: 0.8rem;
+  }
+
+  .game:hover {
+    transform: scale(1.3);
+  }
+}
