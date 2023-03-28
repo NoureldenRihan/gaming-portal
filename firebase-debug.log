@@ -1,0 +1,14 @@
+[debug] [2023-03-28T16:03:31.678Z] ----------------------------------------------------------------------
+[debug] [2023-03-28T16:03:31.682Z] Command:       D:\Javascript\Node js\node.exe C:\Users\nourr\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-03-28T16:03:31.683Z] CLI Version:   11.25.1
+[debug] [2023-03-28T16:03:31.683Z] Platform:      win32
+[debug] [2023-03-28T16:03:31.684Z] Node Version:  v16.13.2
+[debug] [2023-03-28T16:03:31.685Z] Time:          Tue Mar 28 2023 18:03:31 GMT+0200 (Eastern European Standard Time)
+[debug] [2023-03-28T16:03:31.686Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-28T16:03:31.881Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-28T16:03:31.882Z] > authorizing via signed-in user (noureldenrihan2002@gmail.com)
+[debug] [2023-03-28T16:03:31.882Z] [iam] checking project gaming-portal0 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-03-28T16:03:31.887Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/gaming-portal0:testIamPermissions [none]
+[debug] [2023-03-28T16:03:31.887Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/gaming-portal0:testIamPermissions x-goog-quota-user=projects/gaming-portal0
+[debug] [2023-03-28T16:03:31.887Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gaming-portal0:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
