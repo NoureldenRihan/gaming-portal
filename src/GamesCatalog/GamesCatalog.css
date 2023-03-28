@@ -34,6 +34,7 @@
   border-radius: 30px;
   overflow: hidden;
   position: relative;
+  height: 100%;
 }
 
 .mainGame img,
@@ -110,4 +111,20 @@
 
 .sideGames .sidegame .data:hover {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 900px) {
+  .mainGame,
+  .sideGames {
+    height: 400px;
+  }
+
+  .mainGame {
+    width: 65%;
+  }
+
+  .sideGames {
+    width: 35%;
+    gap: 15px;
+  }
 }

@@ -46,6 +46,10 @@
   padding: 0 0 25px 0;
 }
 
+.overlay h3 {
+  text-align: center;
+}
+
 .overlay h3 a {
   font-size: 1.4rem;
   transition: 0.3s;
@@ -62,4 +66,10 @@
 
 .game:hover .overlay {
   background-color: rgba(0, 0, 0, 0);
+}
+
+@media (max-width: 1400px) {
+  .overlay h3 a {
+    font-size: 1.1rem;
+  }
 }
