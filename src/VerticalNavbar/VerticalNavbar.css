@@ -50,30 +50,12 @@
   position: absolute;
   top: -5px;
   left: -7px;
-  width: calc(100% + 14px);
-  height: calc(100% + 10px);
+  width: 30px;
+  height: 30px;
   background: linear-gradient(135deg, #00e375, #0334e3);
   border-radius: 10px;
   transition: 0.3s;
-  z-index: -1;
-}
-
-.tabs .tabIcon::after {
-  content: "";
-  position: absolute;
-  opacity: 0;
-  top: -5px;
-  left: -7px;
-  width: calc(100% + 14px);
-  height: calc(100% + 10px);
-  background: linear-gradient(135deg, #00e375, #0334e3);
-  border-radius: 10px;
-  transition: 0.3s;
-  z-index: -1;
-}
-
-.tabs .tabIcon:hover::after {
-  opacity: 1;
+  z-index: 2;
 }
 
 .advanced {
@@ -176,5 +158,15 @@
 
   .advanced .Icon:first-child {
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .tabs {
+    width: 100%;
+  }
+
+  .advanced {
+    display: none;
   }
 }

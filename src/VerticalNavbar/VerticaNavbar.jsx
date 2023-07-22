@@ -11,9 +11,14 @@ function VerticalNavbar() {
       }
     });
 
-    if (!e.target.classList.contains("tab")) {
-      let fillclass = e.target.className.slice(0, -7) + " tab";
-      e.target.className = fillclass;
+    if (!e.target.classList.contains("special")) {
+      if (!e.target.classList.contains("tab")) {
+        let fillclass = e.target.className.slice(0, -7) + " tab";
+        e.target.className = fillclass;
+      }
+    } else {
+      let fillclass = e.target.parentElement.className.slice(0, -7) + " tab";
+      e.target.parentElement.className = fillclass;
     }
   }
 
@@ -23,23 +28,22 @@ function VerticalNavbar() {
         <img src="/Images/Nourelden Rihan Profile Pic.jpg" alt="User" />
       </div>
       <div className="tabs">
-        <i className="Icon bi bi-house navTab tabIcon tab" onClick={choose}></i>
-        <i
-          className="Icon bi bi-flower1 navTab tabIcon tab"
-          onClick={choose}
-        ></i>
-        <i
-          className="Icon bi bi-shop-window navTab tabIcon tab"
-          onClick={choose}
-        ></i>
-        <i
-          className="Icon bi bi-controller navTab tabIcon tab"
-          onClick={choose}
-        ></i>
+        <div className="divTab navTab tabIcon tab" onClick={choose}>
+          <img className="Icon special" src="/Images/SVGs/house.svg" />
+        </div>
+        <div className="divTab navTab tabIcon" onClick={choose}>
+          <img className="Icon special" src="/Images/SVGs/flower.svg" />
+        </div>
+        <div className="divTab navTab tabIcon" onClick={choose}>
+          <img className="Icon special" src="/Images/SVGs/shop-window.svg" />
+        </div>
+        <div className="divTab navTab tabIcon" onClick={choose}>
+          <img className="Icon special" src="/Images/SVGs/controller.svg" />
+        </div>
       </div>
       <div className="advanced">
-        <i className="Icon bi bi-upload"></i>
-        <i className="Icon bi bi-gear"></i>
+        <img className="Icon special" src="/Images/SVGs/upload.svg" />
+        <img className="Icon special" src="/Images/SVGs/gear.svg" />
       </div>
     </div>
   );

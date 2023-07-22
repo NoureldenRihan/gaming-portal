@@ -5,23 +5,14 @@ function HorizontalNavbar() {
     document.getElementById("searchBar").value = "";
   }
 
-  function fillIcon(e) {
-    [...document.getElementsByClassName("navIcons")].forEach((element) => {
-      if (element.classList.contains("filled")) {
-        element.className = element.className.slice(0, -12);
-      }
-    });
-
-    if (!e.target.classList.contains("filled")) {
-      let fillclass = e.target.className + "-fill filled";
-      e.target.className = fillclass;
-    }
-  }
-
   return (
     <div className="horizontalnavbar">
       <div className="search">
-        <i className="Icon bi bi-search" onClick={search}></i>
+        <img
+          className="Icon special"
+          src="/Images/SVGs/search.svg"
+          onClick={search}
+        />
         <input
           id="searchBar"
           type="text"
@@ -29,9 +20,18 @@ function HorizontalNavbar() {
         />
       </div>
       <div className="navigation">
-        <i className="navIcons notify Icon bi bi-bell" onClick={fillIcon}></i>
-        <i className="navIcons Icon bi bi-heart" onClick={fillIcon}></i>
-        <i className="navIcons Icon bi bi-bag" onClick={fillIcon}></i>
+        <img
+          className="navIcons notify Icon special"
+          src="/Images/SVGs/bell-fill.svg"
+        />
+        <img
+          className="navIcons notify Icon special"
+          src="/Images/SVGs/heart.svg"
+        />
+        <img
+          className="navIcons notify Icon special"
+          src="/Images/SVGs/bag.svg"
+        />
         <div className="profileImgHolder">
           <div className="profileImg">
             <img src="/Images/Nourelden Rihan Profile Pic.jpg" alt="User" />
